@@ -70,8 +70,8 @@ var UnaController = (function() {
         }
     }
 
-    var sendToServer = function(key, user_data) {
-        socket.emit('controller-to-server', key, user_data);
+    var sendToServer = function(key, user_data, cb) {
+        socket.emit('controller-to-server', key, user_data, cb);
     }
 
 
